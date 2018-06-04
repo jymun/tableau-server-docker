@@ -20,6 +20,7 @@ logsetup
 
 log start initalize tsm
 su tsm -c "sudo sh -x /opt/tableau/tableau_server/packages/scripts.*/initialize-tsm -f --accepteula" 2>&1 1> /var/log/tableau_docker.log
+#su tsm -c "sudo sh -x /opt/tableau/tableau_server/packages/scripts.*/initialize-tsm -f --accepteula" 2>&1 1> /mnt/mesos/sandbox/stdout
 log initalize done
 
 source /etc/profile.d/tableau_server.sh
